@@ -16,10 +16,8 @@ import org.slf4j.Logger;
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(TrialMod.MOD_ID)
 public class TrialMod {
-    // Define mod id in a common place for everything to reference
     public static final String MOD_ID = "trialmod";
-    // Directly reference a slf4j logger
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
 
     public TrialMod(FMLJavaModLoadingContext context) {
         IEventBus modEventBus = context.getModEventBus();
